@@ -61,6 +61,7 @@ function setValues() {
     sliderM2.value()
   );
   buffer.clear();
+ 
 }
 
 function windowResized() {
