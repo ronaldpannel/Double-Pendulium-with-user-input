@@ -46,12 +46,17 @@ function setup() {
 
 function draw() {
   background(0);
-  image(buffer, 0, 0);
+
+  image(buffer, 0, 0, width, height);
 
   pendulum.draw();
   pendulum.update();
 }
 function setValues() {
+  setTimeout(() => {
+    buffer.clear(); 
+  }, 200);
+ 
   pendulum = new Pendulum(
     Math.PI / 3,
     Math.PI / 2,
@@ -60,8 +65,6 @@ function setValues() {
     sliderM1.value(),
     sliderM2.value()
   );
-  buffer.clear();
- 
 }
 
 function windowResized() {
