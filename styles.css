@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+.container {
+  background-color: transparent;
+  width: 600px;
+  height: 600px;
+  border: yellow solid 2px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+.container {
+  width: 600px;
+  height: 800px;
+  border: yellow solid 1px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  touch-action: none;
+  touch-action: none;
+}
+canvas {
+  border: white solid 1px;
+  position: absolute;
+  transform: translateY(32%);
+  max-width: 100%;
+  max-height: 100%;
+  touch-action: none;
+}
+p {
+  color: white;
+  font-size: 20px;
+}
